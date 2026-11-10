@@ -1,4 +1,11 @@
-package labNotificacoes;
+import java.time.LocalDateTime;
 
-public class Agendavel {
+public interface Agendavel {
+    void agendarPara(int h);
+
+    int horarioAgendado();
+
+   default String resumoAgendamento(){
+       return "Agendado para as: " + horarioAgendado() + "h";
+   }
 }
