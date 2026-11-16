@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84cad23-c50b-44f7-8675-4592bddcc744" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prova2/src/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "prova-2-com-paradigma-de-OO",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/icaro/paradigmas-2026-ufma",
@@ -94,7 +95,7 @@
       <workItem from="1792150537581" duration="10000" />
       <workItem from="1792412156090" duration="22000" />
       <workItem from="1792496313794" duration="6000" />
-      <workItem from="1794830854615" duration="5633000" />
+      <workItem from="1794830854615" duration="6945000" />
     </task>
     <servers />
   </component>
