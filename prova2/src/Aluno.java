@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.List;
 
 public class Aluno {
@@ -8,22 +7,24 @@ public class Aluno {
 
     private List<Double> notas;
 
-
     public Aluno(String nome, List<Double> notas) {
         this.nome = nome;
         this.notas = List.copyOf(notas);
     }
 
-    public double calcuclarTotalNotas() {
+    public double calcularTotalNotas() {
         return notas.stream().mapToDouble(Double::doubleValue).sum();
     }
 
-    public double calcuclarMediaNotas() {
-        return calcuclarTotalNotas() / notas.size();
+    public double calcularMediaNotas() {
+        if (notas.isEmpty()) {
+            return 0;
+        }
+        return calcularTotalNotas() / notas.size();
     }
 
-    public boolean isAprovado(){
-        return calcuclarMediaNotas() >= mediaAprovacao;
+    public boolean isAprovado() {
+        return calcularMediaNotas() >= mediaAprovacao;
     }
 
     public double getMediaAprovacao() {
@@ -43,12 +44,12 @@ public class Aluno {
     }
 
     public void setNotas(List<Double> notas) {
-        this.notas = notas;
+        this.notas = List.copyOf(notas);
     }
 
     @Override
     public String toString() {
         String estado = isAprovado() ? "Aprovado" : "Reprovado";
-        return String.format("%s: %s com média %.2f", nome, estado, calcuclarMediaNotas());
+        return String.format("%s: %s com média %.2f", nome, estado, calcularMediaNotas());
     }
 }
